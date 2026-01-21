@@ -1,0 +1,67 @@
+:root {
+    --gold: #D4AF37;
+    --black: #121212;
+    --dark-grey: #1E1E1E;
+    --white: #FFFFFF;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+}
+
+#hero {
+    padding: 100px 20px;
+    background: linear-gradient(180deg, #1a1a1a 0%, #121212 100%);
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.signup-container {
+    background: var(--dark-grey);
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    border: 1px solid #333;
+}
+
+input[type="email"] {
+    padding: 15px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.cta-button {
+    background-color: var(--gold);
+    color: black;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
