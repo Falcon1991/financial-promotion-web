@@ -5,6 +5,14 @@
     --white: #FFFFFF;
 }
 
+.logo {
+    font-size: 3rem; /* This makes it significantly larger */
+    font-weight: 700;   /* This makes it bold and "heavy" */
+    letter-spacing: 1px; /* Adds a clean, professional look */
+    color: var(--gold);      /* Ensuring it's that Metallic Gold */
+    margin-bottom: 10px;
+}
+
 body {
     background-color: var(--black);
     color: var(--white);
@@ -19,8 +27,9 @@ body {
     background: linear-gradient(180deg, #1a1a1a 0%, #121212 100%);
 }
 
+
 h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: var(--gold);
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -64,4 +73,48 @@ section {
     padding: 60px 20px;
     max-width: 800px;
     margin: 0 auto;
+}
+
+#coming-soon {
+    display: flex;
+    justify-content: center; /* Centers the image and text horizontally */
+    align-items: center;     /* Centers them vertically */
+    flex-wrap: wrap;        /* Makes sure they stack on phones */
+    gap: 30px;
+}
+
+.book-mockup {
+    /* This is the key: set a max-width */
+    max-width: 30px; 
+    width: 100%;      /* This ensures it stays responsive on smaller screens */
+    height: auto;     /* This keeps the proportions perfect so it doesn't look squished */
+    
+    /* Keep your aesthetic touches */
+    border-radius: 5px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5), 
+                0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+.book-mockup:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #D4AF37;
+    color: #000;
+    font-weight: bold;
+    border-radius: 50px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+/* Responsive fix for phones */
+@media (max-width: 768px) {
+    #coming-soon {
+        flex-direction: column;
+        text-align: center;
+    }
 }
