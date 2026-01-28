@@ -111,6 +111,60 @@ section {
     font-size: 0.8rem;
 }
 
+footer {
+    margin-top: 60px;
+    padding: 40px 20px;
+    border-top: 1px solid #333; /* Subtle line to separate from content */
+    text-align: center;
+    background-color: #000;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #888; /* Dimmer grey text */
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.disclaimer {
+    margin-bottom: 15px;
+}
+
+.disclaimer strong {
+    color: #D4AF37; /* Gold accent on the word Disclaimer */
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Add this at the very top of your CSS file */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style for the Notify Button */
+.notify-btn {
+    display: inline-block;
+    background-color: #D4AF37; /* Gold */
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 20px 0;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.notify-btn:hover {
+    background-color: #bfa030;
+    transform: translateY(-2px);
+}
+
 /* Responsive fix for phones */
 @media (max-width: 768px) {
     #coming-soon {
