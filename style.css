@@ -14,12 +14,51 @@
 }
 
 body {
-    background-color: var(--black);
-    color: var(--white);
-    font-family: 'Inter', -apple-system, sans-serif;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif; /* A clean, modern financial font */
     line-height: 1.6;
     margin: 0;
     text-align: center;
+}
+
+.site-header {
+    padding: 60px 0 20px 0; /* Gives the logo breathing room at the top */
+    text-align: center;
+}
+
+.logo-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.main-logo {
+    width: 80px;  /* Adjust size as needed */
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.3)); /* Subtle gold glow */
+    transition: transform 0.3s ease;
+}
+
+.main-logo:hover {
+    transform: scale(1.05); /* Slight grow effect when hovered */
+}
+
+/* Optional: Add a very thin gold line under the header */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    backdrop-filter: blur(10px);    /* Blur effect for the content passing under it */
+    padding: 20px 0;
+}
+
+.divider {
+    height: 1px;
+    width: 60%;
+    margin: 40px auto;
+    background: linear-gradient(to right, transparent, #D4AF37, transparent);
+    opacity: 0.4;
 }
 
 #hero {
@@ -34,6 +73,17 @@ h1 {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+h2 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #D4AF37; /* Gold headings */
+}
+
+p {
+    line-height: 1.8;
+    color: #ccc;
 }
 
 .signup-container {
@@ -163,6 +213,15 @@ html {
 .notify-btn:hover {
     background-color: #bfa030;
     transform: translateY(-2px);
+}
+
+.coming-soon-text, .mailerlite-form-container, .notify-me, .about, .features, .problem, .social-proof, .book-tease, .signup-container {
+    background: rgba(255, 255, 255, 0.03); /* Extremely subtle white tint */
+    backdrop-filter: blur(10px);          /* Blurs whatever is behind it */
+    border: 1px solid rgba(212, 175, 55, 0.1); /* Very faint gold border */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive fix for phones */
