@@ -224,6 +224,20 @@ html {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+.book-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.book-cover {
+    width: 100%;
+    max-width: 280px;   /* adjust to taste: 220px smaller, 350px larger */
+    height: auto;       /* keeps the correct proportions */
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
 /* Responsive fix for phones */
 @media (max-width: 768px) {
     #coming-soon {
