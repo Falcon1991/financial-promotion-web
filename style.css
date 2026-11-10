@@ -125,11 +125,11 @@ section {
     margin: 0 auto;
 }
 
-#coming-soon {
+#buy {
     display: flex;
-    justify-content: center; /* Centers the image and text horizontally */
-    align-items: center;     /* Centers them vertically */
-    flex-wrap: wrap;        /* Makes sure they stack on phones */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -240,8 +240,21 @@ html {
 
 /* Responsive fix for phones */
 @media (max-width: 768px) {
-    #coming-soon {
+    #buy {
         flex-direction: column;
         text-align: center;
     }
+}
+
+a {
+    color: var(--gold);
+}
+
+.book-container a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.book-container a:hover {
+    transform: scale(1.03) rotate(-1deg);
 }
